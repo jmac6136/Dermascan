@@ -1,5 +1,5 @@
 // DermaScan AI service worker. Saves the app and model so it opens fast and works with a weak connection.
-const CACHE = "dermascan-v1";
+const CACHE = "dermascan-v3";
 const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", e => {
