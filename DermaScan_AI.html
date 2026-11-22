@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<title>DermaScan AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<style>/*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:Manrope,sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:JetBrains Mono,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.-inset-2{inset:-.5rem}.inset-0{inset:0}.inset-2{inset:.5rem}.bottom-0{bottom:0}.left-3{left:.75rem}.right-3{right:.75rem}.top-0{top:0}.top-3{top:.75rem}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mt-0{margin-top:0}.mt-0\.5{margin-top:.125rem}.mt-2{margin-top:.5rem}.flex{display:flex}.hidden{display:none}.h-11{height:2.75rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-2{height:.5rem}.h-20{height:5rem}.h-24{height:6rem}.h-32{height:8rem}.h-56{height:14rem}.h-8{height:2rem}.h-\[440px\]{height:440px}.h-full{height:100%}.h-px{height:1px}.min-h-screen{min-height:100vh}.w-12{width:3rem}.w-14{width:3.5rem}.w-16{width:4rem}.w-2{width:.5rem}.w-20{width:5rem}.w-24{width:6rem}.w-32{width:8rem}.w-56{width:14rem}.w-8{width:2rem}.w-full{width:100%}.w-px{width:1px}.min-w-0{min-width:0}.min-w-\[64px\]{min-width:64px}.max-w-md{max-width:28rem}.flex-shrink-0{flex-shrink:0}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(.4,0,.6,1) infinite}.cursor-pointer{cursor:pointer}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.justify-around{justify-content:space-around}.gap-1{gap:.25rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-2\.5{gap:.625rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.self-start{align-self:flex-start}.self-center{align-self:center}.overflow-hidden,.truncate{overflow:hidden}.truncate{text-overflow:ellipsis;white-space:nowrap}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.rounded-b-xl{border-bottom-right-radius:.75rem;border-bottom-left-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-primary-fixed-dim\/80{border-color:#6bd8cbcc}.border-primary-fixed\/40{border-color:#89f5e766}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.bg-error{--tw-bg-opacity:1;background-color:rgb(186 26 26/var(--tw-bg-opacity))}.bg-error-container{--tw-bg-opacity:1;background-color:rgb(255 218 214/var(--tw-bg-opacity))}.bg-error-container\/40{background-color:#ffdad666}.bg-inverse-surface{--tw-bg-opacity:1;background-color:rgb(33 49 69/var(--tw-bg-opacity))}.bg-inverse-surface\/85{background-color:#213145d9}.bg-primary{--tw-bg-opacity:1;background-color:rgb(0 104 95/var(--tw-bg-opacity))}.bg-primary-fixed{--tw-bg-opacity:1;background-color:rgb(137 245 231/var(--tw-bg-opacity))}.bg-primary-fixed-dim{--tw-bg-opacity:1;background-color:rgb(107 216 203/var(--tw-bg-opacity))}.bg-primary\/30{background-color:#00685f4d}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(86 94 116/var(--tw-bg-opacity))}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(229 238 255/var(--tw-bg-opacity))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(220 233 255/var(--tw-bg-opacity))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(239 244 255/var(--tw-bg-opacity))}.bg-surface-variant{--tw-bg-opacity:1;background-color:rgb(211 228 254/var(--tw-bg-opacity))}.bg-surface\/90{background-color:#f8f9ffe6}.bg-tertiary-container\/90{background-color:#a36700e6}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-white\/10{background-color:#ffffff1a}.bg-gradient-to-b{background-image:linear-gradient(to bottom,var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-inverse-surface\/70{--tw-gradient-from:#213145b3 var(--tw-gradient-from-position);--tw-gradient-to:#21314500 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:#0000 var(--tw-gradient-from-position);--tw-gradient-to:#0000 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.via-primary-fixed\/50{--tw-gradient-to:#89f5e700 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#89f5e780 var(--tw-gradient-via-position),var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:#0000 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#0000 var(--tw-gradient-via-position),var(--tw-gradient-to)}.to-inverse-surface\/80{--tw-gradient-to:#213145cc var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:#0000 var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-3{padding:.75rem}.p-4{padding:1rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-24{padding-bottom:6rem}.pl-2{padding-left:.5rem}.pt-16{padding-top:4rem}.text-center{text-align:center}.font-mono{font-family:JetBrains Mono,monospace}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-\[13px\]{font-size:13px}.text-\[14px\]{font-size:14px}.text-\[16px\]{font-size:16px}.text-\[18px\]{font-size:18px}.text-\[20px\]{font-size:20px}.text-\[24px\]{font-size:24px}.text-\[32px\]{font-size:32px}.text-\[40px\]{font-size:40px}.font-bold{font-weight:700}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-5{line-height:1.25rem}.leading-6{line-height:1.5rem}.leading-7{line-height:1.75rem}.leading-\[18px\]{line-height:18px}.leading-\[22px\]{line-height:22px}.tracking-wider{letter-spacing:.05em}.text-inverse-on-surface{--tw-text-opacity:1;color:rgb(234 241 255/var(--tw-text-opacity))}.text-on-error-container{--tw-text-opacity:1;color:rgb(147 0 10/var(--tw-text-opacity))}.text-on-primary{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-on-surface{--tw-text-opacity:1;color:rgb(11 28 48/var(--tw-text-opacity))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(61 73 71/var(--tw-text-opacity))}.text-primary{--tw-text-opacity:1;color:rgb(0 104 95/var(--tw-text-opacity))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(137 245 231/var(--tw-text-opacity))}.text-primary-fixed-dim{--tw-text-opacity:1;color:rgb(107 216 203/var(--tw-text-opacity))}.text-secondary{--tw-text-opacity:1;color:rgb(86 94 116/var(--tw-text-opacity))}.text-surface-variant{--tw-text-opacity:1;color:rgb(211 228 254/var(--tw-text-opacity))}.text-tertiary{--tw-text-opacity:1;color:rgb(130 81 0/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.shadow-\[0_-2px_12px_rgba\(0\2c 0\2c 0\2c 0\.05\)\]{--tw-shadow:0 -2px 12px #0000000d;--tw-shadow-colored:0 -2px 12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_0_15px_rgba\(107\2c 216\2c 203\2c 0\.35\)\]{--tw-shadow:0 0 15px #6bd8cb59;--tw-shadow-colored:0 0 15px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.04\)\]{--tw-shadow:0 1px 8px #0000000a;--tw-shadow-colored:0 1px 8px var(--tw-shadow-color)}.shadow-\[0_1px_8px_rgba\(0\2c 0\2c 0\2c 0\.04\)\],.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px #0000001a,0 4px 6px -4px #0000001a;--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-sm{--tw-shadow:0 1px 2px 0 #0000000d;--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-sm,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px #0000001a,0 8px 10px -6px #0000001a;--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.outline{outline-style:solid}.blur-md{--tw-blur:blur(12px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px)}.backdrop-blur-md,.backdrop-blur-xl{-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-xl{--tw-backdrop-blur:blur(24px)}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9}.active\:scale-90:active,.active\:scale-95:active{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95}</style>
+<style>
+  html,body{margin:0;padding:0;background:#f8f9ff;}
+  body{overscroll-behavior:none;font-family:Manrope,sans-serif;}
+  .material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 400;}
+  .pt-safe{padding-top:env(safe-area-inset-top,0px);} .pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}
+  ::-webkit-scrollbar{display:none;}
+  .screen{display:none;} .screen.active{display:block;}
+  .bar{transition:width .5s ease;}
+</style>
+</head>
+<body class="text-on-surface min-h-screen">
+
+<!-- Header -->
+<header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+  <div class="h-16 px-4 max-w-md mx-auto flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px]">dermatology</span></div>
+      <div class="flex flex-col">
+        <span class="font-semibold text-[16px] leading-6">DermaScan AI</span>
+        <span class="font-mono text-[10px] text-primary uppercase tracking-wider" id="screen-label">Scan</span>
+      </div>
+    </div>
+    <span id="model-status" class="font-mono text-[11px] px-2 py-1 rounded-full bg-surface-container text-secondary">Loading model…</span>
+  </div>
+</header>
+
+<main class="pt-16 pb-24 max-w-md mx-auto">
+
+  <!-- SCAN -->
+  <section id="scan" class="screen active">
+    <div class="relative w-full overflow-hidden bg-inverse-surface text-inverse-on-surface rounded-b-xl shadow-xl">
+      <div class="relative w-full h-[440px] bg-black">
+        <video id="video" class="absolute inset-0 w-full h-full object-cover" autoplay playsinline muted></video>
+        <div id="cam-off" class="absolute inset-0 flex flex-col items-center justify-center gap-3 text-center px-8">
+          <span class="material-symbols-outlined text-[40px] text-primary-fixed-dim">photo_camera</span>
+          <p class="text-[14px] text-surface-variant">Tap <b>Start camera</b> to scan a spot, or upload a photo.</p>
+          <button id="start-cam" class="px-5 py-2.5 rounded-full bg-primary text-on-primary font-semibold">Start camera</button>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-inverse-surface/70 via-transparent to-inverse-surface/80 pointer-events-none"></div>
+        <!-- Live prediction chip -->
+        <div class="absolute top-3 left-3 right-3 flex flex-col gap-1.5 z-20">
+          <div class="flex items-center justify-between px-3 py-1.5 rounded-full bg-inverse-surface/85 backdrop-blur-md">
+            <div class="flex items-center gap-1.5 min-w-0">
+              <span class="w-2 h-2 rounded-full bg-primary-fixed-dim animate-pulse"></span>
+              <span class="font-mono text-[10px] text-primary-fixed truncate">Teachable Machine model</span>
+            </div>
+            <span id="live-label" class="font-mono text-[11px] text-surface-variant pl-2">Live: –</span>
+          </div>
+          <div class="self-center flex items-center gap-1.5 px-3 py-1 rounded-full bg-tertiary-container/90 text-white">
+            <span class="material-symbols-outlined text-[14px]">lightbulb</span>
+            <span class="font-mono text-[10px]">Hold 10–15 cm · good light · no glare</span>
+          </div>
+        </div>
+        <!-- Reticle -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+          <div class="relative w-56 h-56 flex items-center justify-center">
+            <div class="absolute inset-2 rounded-full border border-primary-fixed/40"></div>
+            <div class="absolute w-full h-px bg-gradient-to-r from-transparent via-primary-fixed/50 to-transparent"></div>
+            <div class="absolute h-full w-px bg-gradient-to-b from-transparent via-primary-fixed/50 to-transparent"></div>
+            <div class="w-32 h-32 rounded-full border-2 border-primary-fixed-dim/80 shadow-[0_0_15px_rgba(107,216,203,0.35)]"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <div class="px-4 py-3 bg-inverse-surface flex items-center justify-between">
+        <button id="flip-cam" aria-label="Switch camera" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center active:scale-95"><span class="material-symbols-outlined">flip_camera_ios</span></button>
+        <div class="relative">
+          <div class="absolute -inset-2 rounded-full bg-primary/30 blur-md animate-pulse"></div>
+          <button id="shutter" aria-label="Scan this spot" class="relative w-20 h-20 rounded-full bg-white flex items-center justify-center shadow-lg active:scale-90 transition-transform">
+            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[32px]">photo_camera</span></div>
+          </button>
+        </div>
+        <label aria-label="Upload a photo" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center active:scale-95 cursor-pointer">
+          <span class="material-symbols-outlined">photo_library</span>
+          <input id="upload" type="file" accept="image/*" class="hidden"/>
+        </label>
+      </div>
+    </div>
+    <div class="px-4 py-3 flex flex-col gap-2">
+      <div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+        <span class="material-symbols-outlined text-[18px] text-tertiary mt-0.5">verified_user</span>
+        <p class="text-[12px] leading-[18px] text-on-surface-variant">DermaScan AI is a school prototype. It cannot diagnose skin cancer. Only a doctor can do that. Photos stay on this device.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="result" class="screen">
+    <div class="px-4 py-4 flex flex-col gap-4">
+      <div id="no-result" class="p-4 rounded-xl bg-surface-container-low text-[14px] text-on-surface-variant">No scan yet. Go to <b>Scan</b> and take or upload a photo.</div>
+      <div id="result-body" class="hidden flex flex-col gap-4">
+        <div class="flex items-center gap-4 bg-white rounded-xl p-4 shadow-sm">
+          <img id="result-img" class="w-24 h-24 rounded-lg object-cover bg-surface-variant flex-shrink-0" alt="Scanned spot"/>
+          <div class="flex flex-col gap-1 min-w-0">
+            <span id="result-chip" class="self-start px-3 py-1 rounded-full font-mono text-[11px] font-semibold"></span>
+            <span id="result-title" class="font-semibold text-[20px] leading-7"></span>
+            <span id="result-time" class="font-mono text-[10px] text-secondary"></span>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow-sm flex flex-col gap-3">
+          <div class="flex items-baseline justify-between">
+            <h2 class="font-semibold text-[18px]">What the model thinks</h2>
+            <span class="font-mono text-[10px] text-secondary">Confidence</span>
+          </div>
+          <div id="bars" class="flex flex-col gap-3"></div>
+          <p class="text-[12px] text-secondary">Confidence is not the same as being correct. The model can be very sure and still be wrong.</p>
+        </div>
+        <div id="advice" class="flex items-start gap-3 p-4 rounded-xl"></div>
+        <div class="flex flex-col gap-2">
+          <button id="save-btn" class="w-full h-12 rounded-lg bg-primary text-on-primary font-semibold flex items-center justify-center gap-2"><span class="material-symbols-outlined text-[20px]">bookmark_add</span><span id="save-label">Save to My Spots</span></button>
+          <a href="https://www.healthdirect.gov.au/australian-health-services" target="_blank" rel="noopener" class="w-full h-12 rounded-lg bg-surface-container font-semibold flex items-center justify-center gap-2"><span class="material-symbols-outlined text-[20px] text-primary">near_me</span>Find a GP near you</a>
+          <button data-go="scan" class="w-full h-11 rounded-lg text-secondary font-semibold flex items-center justify-center gap-1.5"><span class="material-symbols-outlined text-[18px]">replay</span>Scan again</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MY SPOTS -->
+  <section id="spots" class="screen">
+    <div class="px-4 py-4 flex flex-col gap-3">
+      <div class="p-4 rounded-xl bg-surface-container-low">
+        <p class="font-semibold">My Spots</p>
+        <p class="text-[13px] text-on-surface-variant">Photograph the same spot every 3 months. A spot that changes is a warning sign.</p>
+      </div>
+      <div id="spot-list" class="flex flex-col gap-2"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="screen">
+    <div class="px-4 py-4 flex flex-col gap-3 text-[14px] leading-[22px]">
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <h2 class="font-semibold text-[18px] mb-1">How it works</h2>
+        <p>The app sends each photo to an image model trained in Google Teachable Machine. The model compares it with the examples it learned from and gives a confidence for each class.</p>
+        <p class="mt-2 font-mono text-[11px] text-secondary">Classes in this model: <span id="class-list">loading…</span></p>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <h2 class="font-semibold text-[18px] mb-1">Who might it fail?</h2>
+        <p>Most public skin photo collections have fewer photos of darker skin. A model trained on them may be less accurate for some people. It was also trained on close-up specialist photos, so ordinary phone photos may confuse it.</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 shadow-sm">
+        <h2 class="font-semibold text-[18px] mb-1">Privacy</h2>
+        <p>The model runs inside your browser. Photos are not uploaded anywhere.</p>
+      </div>
+      <div class="p-4 rounded-xl bg-surface-container text-[12px] text-on-surface-variant">
+        School prototype only. Not medical advice. Images used for training. ISIC Archive, HAM10000 dataset (Tschandl et al., 2018), CC BY-NC 4.0. Interface designed with Google Stitch.
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Nav -->
+<nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]">
+  <div class="max-w-md mx-auto flex justify-around items-center h-16">
+    <button data-go="scan" class="nav-btn flex flex-col items-center gap-1 min-w-[64px]"><span class="material-symbols-outlined">document_scanner</span><span class="font-mono text-[11px]">Scan</span></button>
+    <button data-go="result" class="nav-btn flex flex-col items-center gap-1 min-w-[64px]"><span class="material-symbols-outlined">analytics</span><span class="font-mono text-[11px]">Result</span></button>
+    <button data-go="spots" class="nav-btn flex flex-col items-center gap-1 min-w-[64px]"><span class="material-symbols-outlined">collections_bookmark</span><span class="font-mono text-[11px]">My Spots</span></button>
+    <button data-go="about" class="nav-btn flex flex-col items-center gap-1 min-w-[64px]"><span class="material-symbols-outlined">info</span><span class="font-mono text-[11px]">About</span></button>
+  </div>
+</nav>
+
+<canvas id="snap" class="hidden"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8.5/dist/teachablemachine-image.min.js"></script>
+<script>
+// ===== Your Teachable Machine model =====
+const MODEL_URL = "https://teachablemachine.withgoogle.com/models/1A_7PGDw_/";
+
+let model = null, stream = null, facing = "environment", liveTimer = null, lastResult = null;
+const spots = [];
+const $ = id => document.getElementById(id);
+
+// ---- Screens ----
+const labels = {scan:"Scan", result:"Result", spots:"My Spots", about:"About"};
+function go(name){
+  document.querySelectorAll(".screen").forEach(s => s.classList.toggle("active", s.id === name));
+  document.querySelectorAll(".nav-btn").forEach(b => {
+    const on = b.dataset.go === name;
+    b.classList.toggle("text-primary", on); b.classList.toggle("text-on-surface-variant", !on);
+  });
+  $("screen-label").textContent = labels[name];
+  if (name === "spots") renderSpots();
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => go(b.dataset.go)));
+go("scan");
+
+// ---- How to read a class name ----
+function kind(label){
+  const l = label.toLowerCase();
+  if (/(doctor|melanoma|malignant|suspicious|cancer|see)/.test(l)) return "doctor";
+  if (/(nothing|background|not skin|no spot|none|empty)/.test(l)) return "nothing";
+  return "normal";
+}
+const styles = {
+  doctor:  {chip:"bg-error-container text-on-error-container", bar:"bg-error", icon:"medical_services",
+            box:"bg-error-container/40", title:"See a doctor",
+            text:"This spot looks like the photos the model learned as needing a doctor. Please book a skin check with your GP. Only a doctor can tell you for sure."},
+  normal:  {chip:"bg-primary-fixed text-primary", bar:"bg-primary", icon:"check_circle",
+            box:"bg-surface-container-high", title:"Looks normal",
+            text:"This spot looks like the photos the model learned as normal. Keep checking it every 3 months. See a GP if it changes in size, shape or colour."},
+  nothing: {chip:"bg-surface-container text-secondary", bar:"bg-secondary", icon:"help",
+            box:"bg-surface-container", title:"No spot found",
+            text:"The model could not find a skin spot. Move closer, use good light and try again."}
+};
+
+// ---- Load model ----
+(async () => {
+  try {
+    model = await tmImage.load(MODEL_URL + "model.json", MODEL_URL + "metadata.json");
+    $("model-status").textContent = "Model ready";
+    $("model-status").className = "font-mono text-[11px] px-2 py-1 rounded-full bg-primary-fixed text-primary";
+    $("class-list").textContent = model.getClassLabels().join(", ");
+  } catch (e) {
+    $("model-status").textContent = "Model failed to load";
+    $("model-status").className = "font-mono text-[11px] px-2 py-1 rounded-full bg-error-container text-on-error-container";
+    $("class-list").textContent = "could not load. Check the internet connection.";
+    console.error(e);
+  }
+})();
+
+// ---- Camera ----
+async function startCamera(){
+  try {
+    if (stream) stream.getTracks().forEach(t => t.stop());
+    stream = await navigator.mediaDevices.getUserMedia({video:{facingMode:facing}, audio:false});
+    $("video").srcObject = stream;
+    $("cam-off").classList.add("hidden");
+    clearInterval(liveTimer);
+    liveTimer = setInterval(liveGuess, 700);
+  } catch (e) {
+    $("cam-off").querySelector("p").textContent = "Camera not available. Use the upload button instead.";
+  }
+}
+$("start-cam").addEventListener("click", startCamera);
+$("flip-cam").addEventListener("click", () => { facing = facing === "environment" ? "user" : "environment"; if (stream) startCamera(); });
+
+async function liveGuess(){
+  const v = $("video");
+  if (!model || !v.videoWidth || !$("scan").classList.contains("active")) return;
+  const p = await model.predict(v);
+  const top = p.reduce((a,b) => a.probability > b.probability ? a : b);
+  $("live-label").textContent = "Live: " + top.className + " " + Math.round(top.probability*100) + "%";
+}
+
+function snapFromVideo(){
+  const v = $("video"), c = $("snap");
+  const s = Math.min(v.videoWidth, v.videoHeight);
+  c.width = c.height = 224;
+  c.getContext("2d").drawImage(v, (v.videoWidth-s)/2, (v.videoHeight-s)/2, s, s, 0, 0, 224, 224);
+  return c;
+}
+
+$("shutter").addEventListener("click", async () => {
+  if (!stream) { startCamera(); return; }
+  if (!model) return;
+  const c = snapFromVideo();
+  await classify(c, c.toDataURL("image/jpeg", 0.85));
+});
+
+$("upload").addEventListener("change", e => {
+  const f = e.target.files[0]; if (!f || !model) return;
+  const img = new Image();
+  img.onload = () => classify(img, img.src);
+  img.src = URL.createObjectURL(f);
+  e.target.value = "";
+});
+
+// ---- Classify and show result ----
+async function classify(source, dataUrl){
+  const preds = await model.predict(source);
+  preds.sort((a,b) => b.probability - a.probability);
+  const top = preds[0], k = kind(top.className), st = styles[k];
+  lastResult = {img:dataUrl, preds, top, k, time:new Date()};
+
+  $("no-result").classList.add("hidden");
+  $("result-body").classList.remove("hidden");
+  $("result-img").src = dataUrl;
+  $("result-chip").className = "self-start px-3 py-1 rounded-full font-mono text-[11px] font-semibold " + st.chip;
+  $("result-chip").textContent = top.className;
+  $("result-title").textContent = st.title;
+  $("result-time").textContent = lastResult.time.toLocaleString("en-AU");
+  $("bars").innerHTML = preds.map(p => {
+    const pct = (p.probability*100).toFixed(1);
+    return `<div class="flex flex-col gap-1">
+      <div class="flex justify-between"><span class="text-[14px]">${p.className}</span><span class="font-mono text-[13px] font-bold">${pct}%</span></div>
+      <div class="w-full h-2 rounded-full bg-surface-variant overflow-hidden"><div class="bar h-full rounded-full ${styles[kind(p.className)].bar}" style="width:${pct}%"></div></div>
+    </div>`;
+  }).join("");
+  $("advice").className = "flex items-start gap-3 p-4 rounded-xl " + st.box;
+  $("advice").innerHTML = `<span class="material-symbols-outlined text-[24px] text-primary">${st.icon}</span>
+    <div><p class="font-semibold">${st.title}</p><p class="text-[13px] text-on-surface-variant leading-5">${st.text}</p></div>`;
+  $("save-label").textContent = "Save to My Spots";
+  go("result");
+}
+
+// ---- My Spots (kept only while the page is open) ----
+$("save-btn").addEventListener("click", () => {
+  if (!lastResult) return;
+  spots.unshift(lastResult); lastResult = null;
+  $("save-label").textContent = "Saved";
+});
+function renderSpots(){
+  $("spot-list").innerHTML = spots.length ? spots.map((s,i) => `
+    <div class="bg-white p-3 rounded-xl shadow-sm flex items-center gap-3">
+      <img src="${s.img}" class="w-14 h-14 rounded-lg object-cover" alt="Saved spot ${spots.length-i}"/>
+      <div class="flex flex-col">
+        <span class="font-semibold">Spot ${spots.length-i} · ${styles[s.k].title}</span>
+        <span class="font-mono text-[11px] text-secondary">${s.top.className} ${Math.round(s.top.probability*100)}% · ${s.time.toLocaleDateString("en-AU")}</span>
+      </div>
+    </div>`).join("") : `<p class="text-[13px] text-secondary px-1">No saved spots yet.</p>`;
+}
+</script>
+</body>
+</html>
